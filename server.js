@@ -32,9 +32,9 @@ app.use('/api/auth', authRoutes)
 app.use('/api/user', userRoutes)
 app.use('/api/post', postRoutes)
 
-// app.get('/**', (req,res) => {
-//     res.sendFile(path.resolve('public/index.html'))
-// })
+app.get('/**', (req,res) => {
+    res.sendFile(path.resolve('public/index.html'))
+})
 
 const port = process.env.PORT || 3030
 
