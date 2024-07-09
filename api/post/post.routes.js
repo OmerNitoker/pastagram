@@ -1,6 +1,6 @@
 import express from 'express'
 import { addPost, getPostById, getPosts, removePost, updatePost } from './post.controller.js'
-import { requireAuth } from '../../middlewares/requireAuth.middleware.js'
+// import { requireAuth } from '../../middlewares/requireAuth.middleware.js'
 // import {log} from '../../middlewares/logger.middleware.js'
 
 export const postRoutes = express.Router()

@@ -13,7 +13,6 @@ async function query() {
     try {
         const collection = await dbService.getCollection('post')
         const posts = await collection.find().toArray()
-        // console.log('posts:',posts)
         return posts
     } catch (err) {
         console.log('ERROR: cannot find posts')
