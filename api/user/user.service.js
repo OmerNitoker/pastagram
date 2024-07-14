@@ -90,7 +90,7 @@ async function add(user) {
             username: user.username,
             password: user.password,
             fullname: user.fullname,
-            imgUrl: '',
+            imgUrl: user.imgUrl,
             following: [],
             followers: [],
             posts:[],
